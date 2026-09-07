@@ -1,0 +1,2 @@
+/preview/
+  Content-Security-Policy: frame-ancestors https://developers.deriv.com https://staging-developers.deriv.com https://*.deriv-api-v2.pages.dev http://localhost:*

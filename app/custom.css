@@ -1,0 +1,24 @@
+/* Custom CSS for this template */
+/* Add your custom styles here */
+
+/* No-code build mode: briefly flash the draggable blocks (3× over 1.5s) when the
+   layout is unlocked, so it's clear the components can be dragged to reorder. */
+@keyframes nocode-drag-hint {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(var(--primary) / 0);
+    border-color: rgb(var(--border));
+  }
+  50% {
+    box-shadow: 0 0 0 3px rgb(var(--primary) / 0.35);
+    border-color: rgb(var(--primary));
+  }
+}
+.nocode-drag-hint {
+  animation: nocode-drag-hint 1s ease-in-out 2;
+}
+@media (prefers-reduced-motion: reduce) {
+  .nocode-drag-hint {
+    animation: none;
+  }
+}
